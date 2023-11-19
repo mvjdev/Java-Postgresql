@@ -12,3 +12,7 @@ VALUES
     ('Alice', uuid_generate_v4(), 1, TRUE), -- Alice emprunte le livre avec l'ID 1
     ('Bob', uuid_generate_v4(), NULL, FALSE), -- Bob n'emprunte aucun livre pour le moment
     ('Eve', uuid_generate_v4(), 3, TRUE); -- Eve emprunte le livre avec l'ID 3
+
+
+
+

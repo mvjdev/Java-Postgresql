@@ -47,4 +47,39 @@ Dans le langage Java, System.setEnv() modifie les variables d'environnement de l
 Cependant, cela affecterait uniquement l'environnement de l'application Java 
 et ne serait pas visible par d'autres processus ou applications.
 ```
+#### 2)
+#### a. C'est quoi une annotation en Java
 
+##### Reponse:
+
+```
+a) En Java, une annotation est une instruction spéciale ajoutée au code 
+pour donner des indications au compilateur ou à d'autres outils sans affecter directement le code.
+```
+
+#### b) Comment peut-on créer une annotation personnalisée en Java ? Illustrez en créant une annotation personnalisée appelée @MyFirstAnnotation.
+
+##### Reponse:
+
+```
+b) Pour créer une annotation personnalisée (@MyFirstAnnotation), utilisez @interface.
+
+import java.lang.annotation.*;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface MyFirstAnnotation {
+    String value() default "default value";
+    int number() default 0;
+}
+```
+
+#### c) Que signifie l’annotation @Override ?
+
+##### Reponse:
+
+```
+c) L'annotation @Override dit au compilateur 
+qu'une méthode dans une classe enfant remplace une méthode héritée 
+de sa classe parente, évitant ainsi les erreurs de typographie.
+```
