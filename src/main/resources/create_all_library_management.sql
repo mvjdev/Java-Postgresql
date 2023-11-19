@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS book (
     id SERIAL PRIMARY KEY,
     book_id VARCHAR(100),
     book_name VARCHAR(50),
-    topic VARCHAR(200),
+    topic VARCHAR(50),
     page_number INT,
     release_date TIMESTAMP,
     author_id INT,
