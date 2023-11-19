@@ -37,7 +37,6 @@ public class SubscriberCrudOperations implements CrudOperations<SubscriberModel>
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Gérer l'erreur de manière appropriée
         }
         return subscribers;
     }
@@ -62,7 +61,6 @@ public class SubscriberCrudOperations implements CrudOperations<SubscriberModel>
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Gérer l'erreur de manière appropriée
         }
         return null;
     }
@@ -95,7 +93,6 @@ public class SubscriberCrudOperations implements CrudOperations<SubscriberModel>
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Gérer l'erreur de manière appropriée
         }
         return savedSubscribers;
     }
