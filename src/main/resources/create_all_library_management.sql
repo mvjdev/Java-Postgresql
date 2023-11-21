@@ -6,10 +6,6 @@ DROP TYPE IF EXISTS Topic;
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
-DROP TABLE IF EXISTS admin;
--- Supprimer le type enum s'il existe
-DROP TYPE IF EXISTS AdminRole;
-
 -- Créer le type enum Topic
 CREATE TYPE Topic AS ENUM ('COMEDY', 'ROMANCE', 'OTHER');
 
